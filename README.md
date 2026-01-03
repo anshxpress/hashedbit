@@ -1,2 +1,2 @@
-# hashedbit
+# Hashedbit
 Assignment of HashedBit
