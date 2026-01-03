@@ -1,0 +1,2 @@
+# Hasedbit
+Assignment of HasedBit
