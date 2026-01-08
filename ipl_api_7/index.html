@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPL Season 2022 Points</title>
+    <style>
+        /* Basic styling for the table matching the likely sample structure */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">IPL Season 2022 Points</h1>
+    <div id="loading">Loading...</div>
+    <table id="points-table" style="display: none;">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Team</th>
+                <th>Matches</th>
+                <th>Won</th>
+                <th>Lost</th>
+                <th>NRR</th>
+                <th>Points</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data will be inserted here -->
+        </tbody>
+    </table>
+
+    <script>
+        async function fetchAndDisplayData() {
+            try {
+                const response = await fetch('https://my-json-server.typicode.com/FreSauce/json-ipl/data');
+                const data = await response.json();
+
+                // Sort by NRR in ascending order
+                // Note: NRR is a string in the JSON usually, so we parse it.
+                data.sort((a, b) => parseFloat(a.NRR) - parseFloat(b.NRR));
+
+                const tbody = document.querySelector('#points-table tbody');
+
+                data.forEach((team, index) => {
+                    const row = document.createElement('tr');
+
+
+                    const noCell = document.createElement('td');
+                    noCell.textContent = index + 1;
+                    row.appendChild(noCell);
+
+                    const teamCell = document.createElement('td');
+                    teamCell.textContent = team.Team;
+                    row.appendChild(teamCell);
+
+                    const matchesCell = document.createElement('td');
+                    matchesCell.textContent = team.Matches;
+                    row.appendChild(matchesCell);
+
+                    const wonCell = document.createElement('td');
+                    wonCell.textContent = team.Won;
+                    row.appendChild(wonCell);
+
+                    const lostCell = document.createElement('td');
+                    lostCell.textContent = team.Lost;
+                    row.appendChild(lostCell);
+
+                    const nrrCell = document.createElement('td');
+                    nrrCell.textContent = team.NRR;
+                    row.appendChild(nrrCell);
+
+                    const pointsCell = document.createElement('td');
+                    pointsCell.textContent = team.Points;
+                    row.appendChild(pointsCell);
+
+                    tbody.appendChild(row);
+                });
+
+                document.getElementById('loading').style.display = 'none';
+                document.getElementById('points-table').style.display = 'table';
+
+            } catch (error) {
+                console.error('Error:', error);
+                document.getElementById('loading').textContent = 'Error loading data';
+            }
+        }
+
+        fetchAndDisplayData();
+    </script>
+</body>
+
+</html>
