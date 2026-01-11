@@ -15,8 +15,8 @@ const movies = [
   },
   {
     id: 3,
-    name: "Titanic",
-    img: "https://image.tmdb.org/t/p/w300/9xjZS2rlVxm8SFx8kPC3aIGCOYQ.jpg"
+    name: "Punisher",
+    img: "https://images.thedirect.com/media/photos/pun1_PXX8Wo5.jpg"
   },
   {
     id: 4,
@@ -50,18 +50,18 @@ const movies = [
   },
   {
     id: 10,
-    name: "Frozen",
-    img: "https://image.tmdb.org/t/p/w300/kgwjIb2JDHRhNk13lmSxiClFjVk.jpg"
+    name: "Fight club",
+    img: "https://m.media-amazon.com/images/M/MV5BOTgyOGQ1NDItNGU3Ny00MjU3LTg2YWEtNmEyYjBiMjI1Y2M5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
   },
   {
     id: 11,
-    name: "Inception",
-    img: "https://image.tmdb.org/t/p/w300/edv5CZvWj09upOsy2Y6IwDhK8bt.jpg"
+    name: "Daredevil",
+    img: "https://resizing.flixster.com/NR8vSJ2c8Pre9Ktp9bgPZVIOtDU=/fit-in/352x330/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p11408531_b_v9_aa.jpg"
   },
   {
     id: 12,
-    name: "Interstellar",
-    img: "https://image.tmdb.org/t/p/w300/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg"
+    name: "X-man",
+    img: "https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p159376_p_v8_aw.jpg"
   },
   {
     id: 13,
@@ -70,8 +70,8 @@ const movies = [
   },
   {
     id: 14,
-    name: "Coco",
-    img: "https://image.tmdb.org/t/p/w300/gGEsBPAijhVUFoiNpgZXqRVWJt2.jpg"
+    name: "Avengers- Age of ultron",
+    img: "https://images.justwatch.com/poster/164114252/s718/avengers-age-of-ultron.jpg"
   },
   {
     id: 15,
