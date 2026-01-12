@@ -4,7 +4,6 @@ body {
     line-height: 1.6;
 }
 
-/* Header */
 header {
     background-color: #1a1a1a;
     color: white;
@@ -21,7 +20,6 @@ header .socials a {
     font-weight: bold;
 }
 
-/* Navigation */
 nav {
     background-color: #333;
     padding: 10px;
@@ -34,12 +32,10 @@ nav a {
     margin: 0 20px;
 }
 
-/* Layout */
 .page-container {
     display: flex;
 }
 
-/* Sidebar */
 aside {
     width: 20%;
     background-color: #f0f0f0;
@@ -48,13 +44,11 @@ aside {
     border-right: 2px solid #ddd;
 }
 
-/* Main */
 main {
     width: 80%;
     padding: 20px;
 }
 
-/* Food Boxes */
 .food-box {
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -74,7 +68,7 @@ main {
     margin-top: 0;
 }
 
-/* Footer */
+
 footer {
     background-color: #1a1a1a;
     color: white;
