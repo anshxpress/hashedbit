@@ -13,3 +13,5 @@ function calculate(num1, num2, operator) {
   }
 }
 
+let result = calculate(10, 5, '/');
+console.log(result);

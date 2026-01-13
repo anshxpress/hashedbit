@@ -13,3 +13,4 @@ function scopeExample() {
   console.log(y); 
   console.log(z); 
 }
+scopeExample();

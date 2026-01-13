@@ -4,4 +4,4 @@ function countWords(paragraph) {
 }
 
 let para = "This is a simple paragraph to test the code. Count the HashedBit words.";
-console.log(countWords(para)); 
+console.log(countWords(para)); // count of para..
